@@ -1,0 +1,31 @@
+#coding:utf-8
+
+#线程数
+requests=64
+
+#redis地址，保存图片路径，异步下载保存处理
+redis_host='127.0.0.1'
+redis_port=6379
+redis_db=0
+redis_key='images'
+
+doc_file='/data/baike/sql/doc_%s.sql'
+relate_file='/data/baike/sql/relate.sql'
+pages_file='/data/baike/sql/pages.txt'
+error_file='/data/baike/sql/error.txt'
+log_file='/data/baike/spider.log'
+image_dir='/data/baike/images'
+start=1
+end=10
+
+mdx_flag=False
+
+#图片下载，多个配置，多线程下载
+redis_services = [
+        {
+            'host' : '127.0.0.1',
+            'port' : 6379,
+            'db' : 0,
+            'key' : 'images'
+        }
+]

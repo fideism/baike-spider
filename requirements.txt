@@ -1,0 +1,6 @@
+pymysql
+pillow
+scrapy
+beautifulsoup4
+fake_useragent
+redis
